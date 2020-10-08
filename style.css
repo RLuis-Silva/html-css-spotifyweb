@@ -60,11 +60,17 @@ main aside .account {
 main .main_content {
   background-color: orange; /* DEBUG:  */
   width: calc(100% - 200px);
+
 }
 
-.main_content .recently_played,
-.main_content .playlist_johnDoe {
+/* .main_content .playlist_johnDoe */
+.main_content .lista-playlist {
   background-color: lightblue; /* DEBUG:  */
+  padding: 10px;
+  border: solid 1px black;
+  margin-bottom: 40px;
+}
+.main_content .lista-box {
   padding: 10px;
   display: flex;
   /* default è flex-direction: row */
