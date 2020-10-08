@@ -40,7 +40,9 @@ main aside .menu {
 
 aside .spazio_flex {
   display: flex;
+  height: 100%;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 main aside .plalist_list {
@@ -52,7 +54,6 @@ main aside .plalist_list {
 main aside .account {
   height: 50px;
   background-color: lightblue; /* DEBUG:  */
-  justify-content: flex-end;
 }
 
 
