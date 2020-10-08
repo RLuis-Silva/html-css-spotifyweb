@@ -7,6 +7,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 19px;
+  height:100vh;
 }
 
 /* HEADER */
@@ -20,13 +21,15 @@ header .container {
 
 /* MAIN */
 main {
-  display: flex;
+  display: flex
 }
 /* a sx del main */
 main aside {
   background-color: yellow;
   width: 200px;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 60px - 100px);
+  display: flex;
+  flex-direction: column;
 }
 
 main aside .menu {
@@ -34,19 +37,39 @@ main aside .menu {
   background-color: green; /* DEBUG: */
 }
 
-main aside .account {
-  height: 50px;
-  background-color: violet; /* DEBUG:  */
-  justify-content: flex-end;
+aside .spazio_flex {
+  display: flex;
+  flex-direction: column;
 }
 
 main aside .plalist_list {
   height: 300px;
   background-color: violet; /* DEBUG:  */
+
 }
+
+main aside .account {
+  height: 50px;
+  background-color: lightblue; /* DEBUG:  */
+  justify-content: flex-end;
+}
+
+
 
 
 /* a dx del main */
 main .main_content {
   background-color: orange;
+}
+
+
+
+
+
+/* FOOTER */
+footer {
+  background-color: grey;
+  height: 100px;
+  width: 100%;
+  display: flex;
 }
