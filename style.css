@@ -56,14 +56,31 @@ main aside .account {
 
 
 
-
 /* a dx del main */
 main .main_content {
-  background-color: orange;
+  background-color: orange; /* DEBUG:  */
+  width: calc(100% - 200px);
 }
 
+.main_content .recently_played,
+.main_content .playlist_johnDoe {
+  background-color: lightblue; /* DEBUG:  */
+  padding: 10px;
+  display: flex;
+  /* default è flex-direction: row */
+  justify-content: space-between;
+}
 
+.main_content .recently_played .box-canzone,
+.main_content .playlist_johnDoe .box-canzone {
+  /* width: 250px;
+  height: 200px; */
+  flex-basis: 250px;
+  height: 200px;
+  background-color: grey; /* DEBUG:  */
+  border: solid 1px white;
 
+}
 
 
 /* FOOTER */
