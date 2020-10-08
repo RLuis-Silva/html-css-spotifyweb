@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 19px;
+}
+
+/* HEADER */
+header .container {
+  width: 100%;
+  height: 60px; /* DEBUG:  */
+  background-color: red;
+  padding: 10px;
+}
+
+
+/* MAIN */
+main {
+  display: flex;
+}
+/* a sx del main */
+main aside {
+  background-color: yellow;
+  width: 200px;
+  height: calc(100vh - 60px);
+}
+
+main aside .menu {
+  height: 100px; /* DEBUG:  */
+  background-color: green; /* DEBUG: */
+}
+
+main aside .account {
+  height: 50px;
+  background-color: violet; /* DEBUG:  */
+  justify-content: flex-end;
+}
+
+main aside .plalist_list {
+  height: 300px;
+  background-color: violet; /* DEBUG:  */
+}
+
+
+/* a dx del main */
+main .main_content {
+  background-color: orange;
+}
