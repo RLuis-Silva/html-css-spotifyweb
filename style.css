@@ -126,6 +126,14 @@ footer {
   justify-content: space-between;
 }
 
+.fixed {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border: solid 2px black;
+}
+
+
 .box-sx {
   background-color: lightgreen; /* DEBUG:  */
   width: 200px;
@@ -139,4 +147,16 @@ footer {
 .canzone {
   background-color: lightgreen; /* DEBUG:  */
   width: 600px;
+}
+
+
+/* RESPONSIVE MAX 600PX */
+@media screen and (max-width: 600px){
+  main aside {
+    width: 50px;
+  }
+
+  main .main_content {
+    width: 100%;
+  }
 }
