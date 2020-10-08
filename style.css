@@ -71,10 +71,12 @@ main .main_content {
   padding: 10px;
   border: solid 1px black;
   margin-bottom: 40px;
+
 }
 .main_content .lista-box {
   padding: 10px;
   display: flex;
+  flex-wrap: wrap;
   /* default è flex-direction: row */
   justify-content: space-between;
 }
