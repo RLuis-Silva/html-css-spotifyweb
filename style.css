@@ -61,8 +61,19 @@ main aside .account {
 /* a dx del main */
 main .main_content {
   background-color: orange; /* DEBUG:  */
-  width: calc(100% - 200px);
+  /* width: calc(100% - 200px);  */
+  flex-grow: 1;  /*cosa fa?*/
+  position: relative;
 
+}
+
+main .scrollable {
+  width: 100%;
+  height: calc(100vh - 60px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
 }
 
 /* .main_content .playlist_johnDoe */
@@ -92,6 +103,8 @@ main .main_content {
 
 }
 
+
+
 /* boh */
 /* width */
 ::.-webkit-scrollbar {
@@ -114,6 +127,9 @@ main .main_content {
 ::.-webkit-scrollbar-thumb:hover {
   background: #b30000;
 }
+
+
+
 
 
 /* FOOTER */
