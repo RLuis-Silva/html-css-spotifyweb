@@ -63,16 +63,17 @@ main .main_content {
   background-color: orange; /* DEBUG:  */
   /* width: calc(100% - 200px);  */
   flex-grow: 1;  /*cosa fa?*/
-  position: relative;
+  /* position: relative; */
 
 }
 
 main .scrollable {
   width: 100%;
-  height: calc(100vh - 60px);
-  position: absolute;
+  height: calc(100vh - 150px);
+  /* NON MI FUNZIONA ABSOLUTE */
+  /* position: absolute;
   top: 0;
-  left: 0;
+  left: 0; */
   overflow-y: auto;
 }
 
@@ -90,6 +91,7 @@ main .scrollable {
   flex-wrap: wrap;
   /* default è flex-direction: row */
   justify-content: space-between;
+
 }
 
 .main_content .recently_played .box-canzone,
@@ -102,32 +104,6 @@ main .scrollable {
   border: solid 1px white;
 
 }
-
-
-
-/* boh */
-/* width */
-::.-webkit-scrollbar {
-  width: 20px;
-}
-
-/* Track */
-::.-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-  border-radius: 10px;
-}
-
-/* Handle */
-::.-webkit-scrollbar-thumb {
-  background: red;
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::.-webkit-scrollbar-thumb:hover {
-  background: #b30000;
-}
-
 
 
 
