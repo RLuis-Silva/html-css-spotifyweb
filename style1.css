@@ -109,8 +109,34 @@ body {
 
 /* MAIN-WINDOW/ CONTENT/ SCROLLABLE/ CONTENT-CATEGORIA*/
 .content .scrollable .content-categoria{
-  height: 200px;
+  height: 400px;
+  margin-bottom: 20px;
+  background-color: lightblue; /* DEBUG:  */
 }
+
+.content .scrollable .content-categoria .lista-album {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.content .scrollable .content-categoria .lista-album .album {
+  flex-basis: calc((100% / 6) - 15px);
+  height: 300px; /* DEBUG:  */
+  background-color: violet;
+  border: solid 1px black;
+  margin-right: 15px;
+}
+
+.content .scrollable .content-categoria .lista-album .album .album-img {
+  width: 100%;
+  height: 250px;
+  background-image: url("./img/metal_lifting.jpg");
+  background-size: cover;
+
+}
+
+
 
 /* PLAYER */
 .player {
