@@ -48,7 +48,19 @@ body {
 .main-window .content {
   position: relative; /*il padre e' reso relative*/
   flex-grow: 1; /*occupera' tutto lo spazio della vh disponibile*/
-  background-color: green;/* DEBUG:  */
+  background-color: #444;/* DEBUG:  */
+}
+
+/* MAIN-WINDOW / CONTENT/ TOPBAR */
+.main-window .content .content-topbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(100, 50, 0, .5);
+  /* opacity: 0.5; */
+  z-index: 1;
 }
 
 /* MAIN-WINDOW/ CONTENT/ SCROLLABLE*/
