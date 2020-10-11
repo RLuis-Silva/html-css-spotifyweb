@@ -20,16 +20,19 @@ body {
 
 /* MAIN-WINDOW */
 .main-window {
+  display: flex;
   background-color: red; /* DEBUG:  */
   flex-grow: 1; /*valore 1: il div occupera' tutto lo spazio della viewport*/
 }
 /* MAIN-WINDOW / SIDEBAR */
 .main-window .sidebar {
+  flex-basis: 200px;
   background-color: orange; /* DEBUG:  */
 }
 
 /* MAIN-WINDOW / CONTENT */
 .main-window .content {
+  flex-grow: 1; /*occupera' tutto lo spazio della vh disponibile*/
   background-color: green;/* DEBUG:  */
 }
 
