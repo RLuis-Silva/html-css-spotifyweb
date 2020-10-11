@@ -10,6 +10,21 @@ body {
   color: white;
 }
 
+/* utilities */
+.lista-oriz li {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.lista-oriz li a {
+  text-decoration: none;
+  color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+
 /* layout */
 .app {
   display: flex;
@@ -78,6 +93,18 @@ body {
   padding-top: 90px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+/*MAIN-WINDOW/ CONTENT/ SCROLALBLE/ NAV*/
+.scrollable .content-nav {
+  height: 50px;
+  background-color: grey;
+  text-transform: uppercase;
+
+}
+
+.scrollable .content-nav a {
+  padding-right: 8px;
 }
 
 /* MAIN-WINDOW/ CONTENT/ SCROLLABLE/ CONTENT-CATEGORIA*/
