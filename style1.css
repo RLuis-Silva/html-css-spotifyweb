@@ -9,7 +9,13 @@
 body {
   color: white;
 }
+.text-grey {
+  color: #66686f;
+}
 
+h4 {
+  color: #66686f;
+}
 /* utilities */
 .lista-oriz li {
   display: inline-block;
@@ -140,6 +146,25 @@ body {
 
 /* PLAYER */
 .player {
+  display: flex;
+  justify-content: space-between;
   height: 80px; /* DEBUG:  */
   background-color: black;
+}
+
+.player-album,
+.player-controller,
+.player-audio {
+  height: 80px;/* DEBUG:  */
+  background-color: #888;
+}
+
+.player-album{
+  flex-basis: 230px;
+}
+.player-controller{
+  flex-basis: 650px;
+}
+.player-audio {
+  flex-basis: 230px;
 }
