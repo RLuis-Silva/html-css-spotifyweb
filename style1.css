@@ -94,9 +94,13 @@ h4 {
   padding: 7px;
   border-radius: 20px;
   background-color: black;
-  color: #66686f;
   text-transform: uppercase;
   border: solid 1px #66686f;
+}
+
+.main-window .content .content-topbar button a {
+  text-decoration: none;
+  color: #66686f;
 }
 
 /* MAIN-WINDOW/ CONTENT/ SCROLLABLE*/
