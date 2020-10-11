@@ -87,6 +87,18 @@ h4 {
   z-index: 1;
 }
 
+.main-window .content .content-topbar button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 7px;
+  border-radius: 20px;
+  background-color: black;
+  color: #66686f;
+  text-transform: uppercase;
+  border: solid 1px #66686f;
+}
+
 /* MAIN-WINDOW/ CONTENT/ SCROLLABLE*/
 .content .scrollable {
   position: absolute; /*rendo absolute, ma devo inserire position relative il padre*/
@@ -104,10 +116,10 @@ h4 {
   padding-right: 15px;
 }
 
+
 /*MAIN-WINDOW/ CONTENT/ SCROLALBLE/ NAV*/
 .scrollable .content-nav {
   height: 50px;
-  background-color: grey;
   text-transform: uppercase;
 
 }
@@ -120,23 +132,21 @@ h4 {
 .content .scrollable .content-categoria{
   height: 400px;
   margin-bottom: 20px;
-  background-color: lightblue; /* DEBUG:  */
+  /* background-color: lightblue; /* DEBUG:  */ */
 }
 
-.content .scrollable .content .content-categoria:nth-child(3)  h4 {
-  margin-bottom: 20px;
-}
+
 
 .content .scrollable .content-categoria .lista-album {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  margin-top: 20px;
 }
 
 .content .scrollable .content-categoria .lista-album .album {
   flex-basis: calc((100% / 6) - 15px);
   height: 300px; /* DEBUG:  */
-  background-color: violet;
   border: solid 1px black;
   margin-right: 15px;
 }
