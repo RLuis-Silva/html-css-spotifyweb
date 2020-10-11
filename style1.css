@@ -50,6 +50,16 @@ body {
   background-color: green;/* DEBUG:  */
 }
 
+/* MAIN-WINDOW/ CONTENT/ SCROLLABLE*/
+.content .scrollable {
+  background-color: black;
+}
+
+/* MAIN-WINDOW/ CONTENT/ SCROLLABLE/ CONTENT-CATEGORIA*/
+.content .scrollable .content-categoria{
+  height: 200px;
+}
+
 /* PLAYER */
 .player {
   height: 80px; /* DEBUG:  */
