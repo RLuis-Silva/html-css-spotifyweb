@@ -46,12 +46,22 @@ body {
 
 /* MAIN-WINDOW / CONTENT */
 .main-window .content {
+  position: relative; /*il padre e' reso relative*/
   flex-grow: 1; /*occupera' tutto lo spazio della vh disponibile*/
   background-color: green;/* DEBUG:  */
 }
 
 /* MAIN-WINDOW/ CONTENT/ SCROLLABLE*/
 .content .scrollable {
+  position: absolute; /*rendo absolute, ma devo inserire position relative il padre*/
+  left: 0; /*sta a sx rispetto al contenitore padre*/
+  width: 100%;
+  height: 100%;
+  overflow-y: auto; /*se il contenuto supera il 100% diventa scrollable*/
+
+  /* alternativa all' absolute */
+  /* height: calc(100vh- 70px); */
+
   background-color: black;
 }
 
