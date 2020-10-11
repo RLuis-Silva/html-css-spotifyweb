@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+/* tipography */
 body {
   color: white;
 }
@@ -14,14 +15,25 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh; /*imposto il tutto grande quanto viewport*/
-  background-color: lightblue;
+  background-color: lightblue; /* DEBUG:  */
 }
 
+/* MAIN-WINDOW */
 .main-window {
   background-color: red; /* DEBUG:  */
   flex-grow: 1; /*valore 1: il div occupera' tutto lo spazio della viewport*/
 }
+/* MAIN-WINDOW / SIDEBAR */
+.main-window .sidebar {
+  background-color: orange; /* DEBUG:  */
+}
 
+/* MAIN-WINDOW / CONTENT */
+.main-window .content {
+  background-color: green;/* DEBUG:  */
+}
+
+/* PLAYER */
 .player {
   height: 80px; /* DEBUG:  */
   background-color: black;
