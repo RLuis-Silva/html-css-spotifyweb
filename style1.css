@@ -27,7 +27,21 @@ body {
 /* MAIN-WINDOW / SIDEBAR */
 .main-window .sidebar {
   flex-basis: 200px;
+  display: flex;
+  flex-direction: column;
   background-color: orange; /* DEBUG:  */
+}
+
+/*  MAIN-WINDOW / SIDEBAR/ SIDERBAR UP */
+.sidebar .sidebar-up {
+  flex-grow: 1;
+  background-color: grey;
+}
+
+/*  MAIN-WINDOW / SIDEBAR/ SIDERBAR BOTTOM */
+.sidebar .sidebar-bottom {
+  background-color: lightblue;
+  height: 50px;
 }
 
 /* MAIN-WINDOW / CONTENT */
