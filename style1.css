@@ -31,6 +31,9 @@ h4 {
   text-align: center;
 }
 
+.bordo-tondo {
+  border-radius: 200px;
+}
 /* layout */
 .app {
   display: flex;
@@ -120,6 +123,10 @@ h4 {
   background-color: lightblue; /* DEBUG:  */
 }
 
+.content .scrollable .content .content-categoria:nth-child(3)  h4 {
+  margin-bottom: 20px;
+}
+
 .content .scrollable .content-categoria .lista-album {
   display: flex;
   flex-wrap: wrap;
@@ -137,11 +144,12 @@ h4 {
 .content .scrollable .content-categoria .lista-album .album .album-img {
   width: 100%;
   height: 250px;
-  background-image: url("./img/metal_lifting.jpg");
-  background-size: cover;
-
 }
 
+.lista-album .album .album-img img {
+  height: 100%;
+  width: 100%;
+}
 
 
 /* PLAYER */
