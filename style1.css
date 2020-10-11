@@ -1,21 +1,25 @@
+/* generale */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
 body {
   color: white;
 }
 
+/* layout */
 .app {
+  display: flex;
+  flex-direction: column;
   height: 100vh; /*imposto il tutto grande quanto viewport*/
   background-color: lightblue;
 }
 
 .main-window {
-  background-color: red;
+  background-color: red; /* DEBUG:  */
+  flex-grow: 1; /*valore 1: il div occupera' tutto lo spazio della viewport*/
 }
 
 .player {
