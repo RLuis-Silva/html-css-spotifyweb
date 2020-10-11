@@ -75,6 +75,9 @@ body {
   /* height: calc(100vh- 70px); */
 
   background-color: black;
+  padding-top: 90px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* MAIN-WINDOW/ CONTENT/ SCROLLABLE/ CONTENT-CATEGORIA*/
