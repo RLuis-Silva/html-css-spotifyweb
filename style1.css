@@ -27,6 +27,15 @@ h4 {
   color: white;
 }
 
+.lista-ver {
+  list-style: none;
+}
+
+.lista-ver li a {
+  text-decoration: none;
+  color: #66686f;
+}
+
 .text-center {
   text-align: center;
 }
@@ -39,13 +48,12 @@ h4 {
   display: flex;
   flex-direction: column;
   height: 100vh; /*imposto il tutto grande quanto viewport*/
-  background-color: lightblue; /* DEBUG:  */
+  background-color: black; /* DEBUG:  */
 }
 
 /* MAIN-WINDOW */
 .main-window {
   display: flex;
-  background-color: red; /* DEBUG:  */
   flex-grow: 1; /*valore 1: il div occupera' tutto lo spazio della viewport*/
 }
 /* MAIN-WINDOW / SIDEBAR */
@@ -53,19 +61,83 @@ h4 {
   flex-basis: 200px;
   display: flex;
   flex-direction: column;
-  background-color: orange; /* DEBUG:  */
 }
 
 /*  MAIN-WINDOW / SIDEBAR/ SIDERBAR UP */
 .sidebar .sidebar-up {
   flex-grow: 1;
-  background-color: grey;
+  padding-top: 10px;
 }
+
+.sidebar-list li {
+  margin-bottom: 10px;
+}
+
+.sidebar .sidebar-up .sidebar-logo img {
+  width: 155px;
+}
+
+.sidebar .sidebar-up .sidebar-nav,
+.sidebar .sidebar-up .sidebar-playlist {
+  padding-top: 15px;
+}
+
+.sidebar .sidebar-up .sidebar-nav ul li,
+.sidebar .sidebar-up .sidebar-playlist ul li {
+  padding-left: 15px;
+}
+
+.sidebar .sidebar-up .sidebar-nav i,
+.sidebar .sidebar-up .sidebar-playlist i {
+  font-size: 18px;
+  color: #66686f;
+  font-weight: 650;
+  margin-right: 5px;
+}
+
+.sidebar .sidebar-up .sidebar-nav ul li:first-child {
+  border-left: solid 1px white;
+}
+
+.sidebar .sidebar-up .sidebar-playlist h2 {
+  padding-left: 15px;
+}
+
+.sidebar .sidebar-up .sidebar-playlist i {
+  font-size: 35px;
+}
+.sidebar .sidebar-up .sidebar-nav li:first-child i,
+.sidebar .sidebar-up .sidebar-nav li:first-child a {
+  color: white;
+}
+/* .sidebar .sidebar-up .sidebar-playlist ul li:first-child {
+  position: relative;
+}
+
+.sidebar .sidebar-up .sidebar-playlist ul li:first-child a:first-child {
+  position: absolute;
+  top: 2px;
+} */
+
+
 
 /*  MAIN-WINDOW / SIDEBAR/ SIDERBAR BOTTOM */
 .sidebar .sidebar-bottom {
-  background-color: lightblue;
-  height: 50px;
+  padding-left: 15px;
+  height: 80px;
+}
+
+.sidebar .sidebar-bottom h4 {
+  margin-bottom: 10px;
+}
+
+/* .sidebar .sidebar-bottom link a {
+  text-decoration: none;
+  color: #66686f;
+} */
+
+.sidebar .sidebar-bottom i {
+  margin-right: 10px;
 }
 
 /* MAIN-WINDOW / CONTENT */
