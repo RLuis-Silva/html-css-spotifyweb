@@ -12,6 +12,9 @@ body {
 .text-grey {
   color: #66686f;
 }
+.text-white {
+  color: white;
+}
 
 h4 {
   color: #66686f;
@@ -42,6 +45,14 @@ h4 {
 
 .bordo-tondo {
   border-radius: 200px;
+}
+
+/* effetto zoom */
+.zoom {
+  transition: transform .2s;
+}
+.zoom:hover {
+  transform: scale(1.2);
 }
 /* layout */
 .app {
@@ -159,7 +170,7 @@ h4 {
   left: 0;
   width: 100%;
   height: 70px;
-  background-color: rgba(100, 50, 0, .5);
+  background-color: rgba(50, 50, 0, .5);
   /* opacity: 0.5; */
   z-index: 1;
 }
@@ -242,28 +253,147 @@ h4 {
   width: 100%;
 }
 
-
-/* PLAYER */
+/* APP/ PLAYER */
 .player {
   display: flex;
   justify-content: space-between;
-  height: 80px; /* DEBUG:  */
+  height: 80px;
   background-color: black;
 }
 
 .player-album,
 .player-controller,
 .player-audio {
-  height: 80px;/* DEBUG:  */
-  background-color: #888;
+  /* height: 80px; */
+  padding: 10px;
 }
 
+/* APP/ PLAYER/ PLAYER-ALBUM */
 .player-album{
   flex-basis: 230px;
+  display: flex;
+
 }
+
+.player-album .img-brano {
+  width: 55px;
+  margin-right: 5px;
+}
+
+.player-album .img-brano img {
+  width: 100%;
+  height: 100%;
+}
+
+.player-album .icone {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.player-album .icone i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+
+/* APP/ PLAYER/ PLAYER-CONTROLLER/ PULSANTI */
 .player-controller{
   flex-basis: 650px;
+  display: flex;
+  flex-direction: column;
 }
+
+.player-controller .pulsanti {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+
+}
+.player-controller .pulsanti i {
+  margin-right: 15px;
+}
+
+.player-controller .pulsanti span:nth-child(3) i{
+  font-size: 35px;
+}
+
 .player-audio {
   flex-basis: 230px;
+}
+
+/* APP/ PLAYER/ PLAYER-CONTROLLER/ TIMELINE */
+/* .player-controller .timeline {
+  display: flex;
+  align-items: center;
+} */
+.timeline {
+  display: flex;
+  align-items: center;
+}
+/* APP/ PLAYER/ PLAYER-CONTROLLER/ TIMELINE/ MIN-INIZIO E MIN-FINE  */
+.player-controller .timeline .min-inizio {
+  margin-right: 15px;
+
+}
+
+.player-controller .timeline .min-fine {
+  margin-left: 15px;
+}
+
+/* APP/ PLAYER/ PLAYER-CONTROLLER/ TIMELINE/ LINEA */
+/* .player-controller .timeline .linea {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row-reverse;
+} */
+.timeline .linea {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row-reverse;
+}
+
+/* .player-controller .timeline .linea .timeline-0 {
+  height: 5px;
+  flex-grow: 1;
+  background-color: orange;
+  border: solid 1px orange;
+} */
+
+.timeline .linea .timeline-0 {
+  height: 5px;
+  flex-grow: 1;
+  background-color: #66686f;
+  border: solid 1px #66686f;
+}
+
+
+/* .player-controller .timeline .linea .timeline-1 {
+  height: 5px;
+  flex-basis: 30%;
+  background-color: green;
+  border: solid 1px green;
+} */
+.timeline .linea .timeline-1 {
+  height: 5px;
+  flex-basis: 30%;
+  background-color: #bababa;
+  border: solid 1px #bababa;
+}
+
+
+
+/* PLAYER AUDIO */
+.player-audio {
+  display: flex;
+  align-items: center;
+}
+.player-audio .timeline {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.player-audio .icone i {
+  margin-right: 10px;
 }
