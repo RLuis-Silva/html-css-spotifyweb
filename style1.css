@@ -127,7 +127,7 @@ h4 {
   height: 80px;
 }
 
-.sidebar .sidebar-bottom h4 {
+.sidebar .sidebar-bottom i {
   margin-bottom: 10px;
 }
 
@@ -138,6 +138,11 @@ h4 {
 
 .sidebar .sidebar-bottom i {
   margin-right: 10px;
+}
+
+.sidebar .sidebar-bottom h2 {
+  margin-top: 15px;
+  color: white;
 }
 
 /* MAIN-WINDOW / CONTENT */
