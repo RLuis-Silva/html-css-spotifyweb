@@ -151,9 +151,13 @@ h4 {
   margin-right: 10px;
 }
 
-.sidebar .sidebar-bottom h2 {
+.sidebar .sidebar-bottom .account {
   margin-top: 15px;
   color: white;
+}
+
+.sidebar .sidebar-bottom .account i {
+  font-size: 20px;
 }
 
 /* MAIN-WINDOW / CONTENT */
@@ -238,8 +242,6 @@ h4 {
 .content .scrollable .content-categoria .lista-album .album {
   flex-basis: calc((100% / 6) - 15px);
   height: 250px;
-  /* min-width: 300px; */
-  /* min-width: 250px; */
   /* min-height: 300px; /* DEBUG: */
   border: solid 1px black;
   margin-right: 15px;
@@ -417,74 +419,49 @@ h4 {
 
   /* MAIN-WINDOW / SIDEBAR */
   .main-window .sidebar {
-    flex-basis: 25px;
+    flex-basis: 10px;
     background-color: orange; /* DEBUG:  */
-    display: flex;
-    flex-direction: column;
+
   }
 
   /*  MAIN-WINDOW / SIDEBAR/ SIDERBAR UP */
-  .sidebar .sidebar-up {
-    /* display: none; */
+  .sidebar .sidebar-up .sidebar-logo span {
+    display: none;
 
   }
   .sidebar .sidebar-up .sidebar-logo {
-    background-image: url(./img/logo-small.svg);
+    background-image: url("./img/logo-small.svg");
     background-repeat: no-repeat;
-    
-  }
-  .sidebar .sidebar-up .sidebar-logo img {
-    display: inherit;
+
   }
 
 
 
+.sidebar .sidebar-up .sidebar-nav li span,
+.sidebar .sidebar-bottom span {
+  display: none;
+}
 
-  .sidebar-list li {
-    margin-bottom: 10px;
-  }
 
 
+.sidebar .sidebar-bottom .account {
+  margin-top: 0;
+}
 
-  .sidebar .sidebar-up .sidebar-nav,
+
+.sidebar .sidebar-bottom .account i {
+  font-size: 40px;
+
+}
+
+.sidebar .sidebar-bottom .line-account {
+  display: none;
+}
+
   .sidebar .sidebar-up .sidebar-playlist {
-    padding-top: 15px;
+    display: none;
   }
 
-  .sidebar .sidebar-up .sidebar-nav ul li,
-  .sidebar .sidebar-up .sidebar-playlist ul li {
-    padding-left: 15px;
-  }
-
-  .sidebar .sidebar-up .sidebar-nav i,
-  .sidebar .sidebar-up .sidebar-playlist i {
-    font-size: 25px;
-
-  }
-
-  .sidebar .sidebar-up .sidebar-nav ul li:first-child {
-    border-left: solid 1px white;
-  }
-
-  .sidebar .sidebar-up .sidebar-playlist h2 {
-    padding-left: 15px;
-  }
-
-  .sidebar .sidebar-up .sidebar-playlist i {
-    font-size: 35px;
-  }
-  .sidebar .sidebar-up .sidebar-nav li:first-child i,
-  .sidebar .sidebar-up .sidebar-nav li:first-child a {
-    color: white;
-  }
-  /* .sidebar .sidebar-up .sidebar-playlist ul li:first-child {
-    position: relative;
-  }
-
-  .sidebar .sidebar-up .sidebar-playlist ul li:first-child a:first-child {
-    position: absolute;
-    top: 2px;
-  } */
 
 
 
