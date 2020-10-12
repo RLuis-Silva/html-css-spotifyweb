@@ -420,19 +420,19 @@ h4 {
   /* MAIN-WINDOW / SIDEBAR */
   .main-window .sidebar {
     flex-basis: 10px;
-    background-color: orange; /* DEBUG:  */
-
   }
 
   /*  MAIN-WINDOW / SIDEBAR/ SIDERBAR UP */
-  .sidebar .sidebar-up .sidebar-logo span {
+  .sidebar .sidebar-up .sidebar-logo img {
     display: none;
 
   }
   .sidebar .sidebar-up .sidebar-logo {
     background-image: url("./img/logo-small.svg");
     background-repeat: no-repeat;
-
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
   }
 
 
@@ -442,6 +442,11 @@ h4 {
   display: none;
 }
 
+/* controllare qusto! */
+.sidebar .sidebar-up .sidebar-nav i {
+  font-size: 30px;
+  text-align: center;
+}
 
 
 .sidebar .sidebar-bottom .account {
@@ -484,10 +489,7 @@ h4 {
     margin-right: 10px;
   }
 
-  .sidebar .sidebar-bottom h2 {
-    margin-top: 15px;
-    color: white;
-  }
+
 
 }
 
