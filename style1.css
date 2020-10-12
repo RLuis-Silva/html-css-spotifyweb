@@ -219,8 +219,17 @@ h4 {
   text-transform: uppercase;
 }
 
+.scrollable .content-nav li {
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
 .scrollable .content-nav a {
   padding-right: 8px;
+}
+
+.scrollable .content-nav .sottolineato {
+  border-bottom: solid 2px #acfe2e;
+
 }
 
 /* MAIN-WINDOW/ CONTENT/ SCROLLABLE/ CONTENT-CATEGORIA*/
