@@ -117,6 +117,13 @@ h4 {
 .sidebar .sidebar-up .sidebar-playlist i {
   font-size: 35px;
 }
+
+.sidebar .sidebar-up .sidebar-playlist ul  li:first-child a {
+  display: flex;
+  align-items: center;
+
+}
+
 .sidebar .sidebar-up .sidebar-nav li:first-child i,
 .sidebar .sidebar-up .sidebar-nav li:first-child a {
   color: white;
